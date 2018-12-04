@@ -1,0 +1,13 @@
+
+.navbar-nav{
+    text-align:left;
+    margin-left: 70px;
+    
+}
+.navbar navbar-dark bg-dark mb-5{
+    background-color: lightblue;
+    border-style: hidden;
+}
+.text{
+    background-color: white;
+}

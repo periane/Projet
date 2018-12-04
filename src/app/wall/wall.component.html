@@ -1,0 +1,64 @@
+<!-- <ul class="post">
+  <li *ngFor="let post of posts">
+    <span class="badge">{{post.id}}</span>{{post.title}}
+  </li>
+</ul> -->
+
+
+
+<div class="card-group">
+    <div class="card" *ngFor="let post of posts">
+      <div class="card-body">
+        <a routerLink="/detail/{{post.id}}" class="btn btn-primary">{{post.title}}</a>
+        <p class="card-body">{{post.body}}</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    
+    </div>
+      
+</div>
+<br>
+<div class="subnavigation-container">
+  <div class="container">
+  </div>
+</div>
+
+<form action="" method="POST" style="width: 500px ; margin : auto" >
+    <div class="row">
+     <div class="col col-md-3">
+          <div class="form-group">
+              <label for="title">title </label>
+             <input type="text" name="title" id="title" class="form-control" #postTitle>
+          </div>
+    </div>
+    </div>
+    
+    <div class="form-group"> 
+       <label for="username">  body </label>
+          <input type="text" #postBody class="form-control">
+    </div>
+
+     <div class="form-group">
+          <label for="password">Auteur</label>
+            <input type="text" #postAuthor class="form-control">    
+    </div>
+
+    <div class="form-group">
+      <label for="comment"></label>
+        <input type="text" #postComments placeholder="Commment" class="form-control">    
+</div>
+
+    <!-- <div class="form-group">
+          <label for="gender">Gender</label>
+        <select name="gender" id="gender" class="form-control">
+          <option  value="male"> male </option>
+          <option  value="female"> female </option>
+      </select>
+    </div> -->
+
+    <div class="form-check">
+           <input type="checkbox" id="accept-terms" class="form-check-input">
+         <label for="accept-terms" class="form-check-label">Accept Terms & Conditions</label>
+    </div>
+      <button class="btn btn-success" (click)="add(postTitle.value, postBody.value, postAuthor.value); postTitle.value=''; postBody.value=''; postComments.value='';postAuthor.value=''">Ajouter</button>
+    </form>
