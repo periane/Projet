@@ -14,4 +14,136 @@
 
 .main{
   font-family: Arial, Helvetica, sans-serif;
-}*/
+}*//* HeroesComponent's private CSS styles */
+/* HeroesComponent's private CSS styles */
+html body{
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.phot img{
+  background-size: cover; 
+  bottom: 35px;
+  position: relative;
+  border-radius: 100%;
+}
+
+  .postEditRow textarea{
+    border: none;
+    resize: none;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-gap: 5px;
+    background: -webkit-linear-gradient(left,#afb5ba,#555555ba);
+    padding: 10px;
+  }
+  .grid-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    float: left;
+    border-radius: 10px;
+  }
+  .box1{
+    grid-column: 1;
+    grid-row: 1/ span 2;
+    width: 250px;
+    height: 350px;
+  }
+  .box3{
+    grid-column: 3;
+    grid-row: 1/ span 2;
+    width: 250px;
+    height: 350px;
+  }
+ 
+   .post-logo{
+    width: 100px;
+  }
+
+  .post-content{
+    width: 500px;
+    height: auto;
+    text-align: left;
+    position: static;
+  }
+
+  .post-date{
+    width: 200px;
+  } 
+
+  /* responsive post-date */
+  @media(max-width: 1325px){
+    .post-content{
+      width: unset;
+    }
+
+    .post-date{
+      width: 300px;
+      text-align: left;
+    }
+  }
+
+  /* responsive wall */
+  @media(max-width: 990px){
+    .box1{
+        grid-column: 1;
+        grid-row: 1/ span 1;
+        width: auto;
+        height: 350px;
+      }
+  
+      .box2{
+        grid-column: 1;
+        grid-row: 2/ span 1;
+        width: auto;
+        height: auto;
+      }
+  
+      .box3{
+        grid-column: 1;
+        grid-row: 3/ span 1;
+        width: auto;
+        height: auto;
+      }
+  
+      .box4{
+        grid-column: 1;
+        grid-row: 4/ span 1;
+        width: auto;
+      }
+
+}
+.containr{
+  display: inline-flex;
+}
+/*nav bar*/
+.img-container{
+  background-image: url(https://source.unsplash.com/random/75x150);
+  height: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+@media only screen and (max-width: 920px){
+  .inner-container{
+      margin-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 540px){
+  .inner-container{
+      margin-top: 150px;
+  }
+  h1{
+      font-size: 5em;
+  }
+  h2{
+      font-size: 1.4em;
+  }
+}

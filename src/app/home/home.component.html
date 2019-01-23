@@ -1,0 +1,39 @@
+<div class="aps">
+
+	<header>
+		<nav>
+			<div class="row clearfix">
+				<img src="assets/logo.png" class="logo">
+
+				<ul class="main-nav animated slideInDown" id="check-class">
+					<li><a href="#">CAKE DELIVERY</a></li>
+					<li><a href="#">HOW TO ORDER</a></li>
+					<li><a href="#">Sign in</a></li>
+					<li><a href="#">Sign up</a></li>
+				</ul>
+				<a href="#" class="mobile-icon"  onclick="slideshow()"> <i class="fa fa-bars"></i> </a>
+			</div>
+		</nav>
+
+		<div class="main-content-header">
+			<h1> WELCOME TO <span class="colorchange"> NTPR CAFE</span>.<br>
+				HOUSE OF CAKE LOVER OO YES. </h1>
+			<a  routerLink="/home/loginUser" class="btn btn-full"> Sign In</a>
+			<a href="/home/wall" class="btn btn-nav"> show me advice</a>
+		</div>
+	</header>
+
+	<script type="text/javascript">
+		
+		function slideshow(){
+			 var x = document.getElementById('check-class');
+			 if(x.style.display === "none"){
+			 	x.style.display="block";
+			 }else{
+			 	x.style.display="none";
+			 }
+		}	
+
+	</script>
+
+</div>

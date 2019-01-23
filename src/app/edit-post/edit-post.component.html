@@ -1,0 +1,53 @@
+<div class="img-container">
+        <div class="inner-container">
+            <h1> SAMPLE</h1>
+            <h2>Happy cooker</h2>
+        </div>
+  </div>
+
+<div class="grid-container">
+    <div class="grid-box box1">
+        <div class=" me-border">  <!--user profile info-->
+          <div> <img src="https://source.unsplash.com/random/400x150" alt="userCoverPicture"> </div>
+          <div class="photo">  <img src="https://source.unsplash.com/random/75x75" alt="userPicture"> </div>
+      </div>
+    </div>
+    <div class="grid-box box2">
+        <!-- show post -->
+        <div class="col-lg-12 col-md-4 p-3">
+            <!-- post info -->
+            <div class="row">
+                <div class="postTitle">
+                   <h1><legend>Modify your post</legend></h1>
+                </div>
+            </div>
+  
+            <!-- post contant -->
+            <section id="contact">
+                <div class="main">
+                    <div class="wrapper">
+                        <form>
+                          <div class="field">
+                            <input type="text" name="text" placeholder="Enter title"  #postTitle>
+                          </div>
+                          <div class="field">
+                            <input type="Email" name="text" placeholder="Enter body" #postBody>
+                          </div>
+                          <div class="field">
+                            <input type="text" name="text" placeholder="Enter Auteur" #postAuthor>
+                          </div>
+                        </form>
+                    </div>  
+                </div>      
+            </section>      
+        </div>
+        <div id="valide">
+                <button (click)="editPost(postTitle.value, postBody.value,postAuthor.value);
+          postTitle.value=''; postAuthor.value=''; postBody.value='';">Edit <i class="fa fa-check"></i></button>
+        </div>
+    </div>
+  
+    <div class="grid-box box3">
+       
+    </div> 
+  </div>
